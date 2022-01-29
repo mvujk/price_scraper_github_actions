@@ -73,3 +73,16 @@ jobs:
           attachments: ./data/*.html
           # Optional priority: 'high', 'normal' (default) or 'low'
           priority: low
+
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "update data" -a
+          
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main  
