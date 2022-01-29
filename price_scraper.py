@@ -197,7 +197,7 @@ prices_fig = (px.line(df_prices,
 # prices_fig.write_html('./data/prices.html')
 
 # save figure for sending
-prices_fig.write_image(IMAGE_FILE)
+prices_fig.write_image(IMAGE_FILE, )
 
 # prices_fig
 print(f"{datetime.now()} Slika sa izvjestajem zavrsena!")
