@@ -194,7 +194,7 @@ prices_fig = (px.line(df_prices,
                      )
                 .update_layout({'legend_orientation':'h'})
             )
-# prices_fig.write_html('./data/prices.html')
+prices_fig.write_html('./data/prices.html')
 
 # save figure for sending
 prices_fig.write_image(IMAGE_FILE, )
