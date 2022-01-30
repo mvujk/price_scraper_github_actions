@@ -9,6 +9,7 @@ import pandas as pd
 import numpy as np
 import csv
 from datetime import datetime
+import yagmail
 
 import plotly.express as px
 
@@ -190,7 +191,7 @@ prices_fig = (px.line(df_prices,
                       y='Price', 
                       color='Item', 
                       hover_data=df_prices.columns, 
-                      title='Cijene artikala',
+                      title='Historical item prices',
                      )
                 .update_layout({'legend_orientation':'h'})
             )
@@ -210,7 +211,7 @@ print(f"{datetime.now()} Slika sa izvjestajem zavrsena!")
 # any(df_results['Price'].isna())
 
 ####### EMAIL FIELDS ########
-receiver = "milorad.vujkovic@gmail.com"
+receiver = os.environ['MAIL_RECEIVER']
 subject=f"Cijena izabranih artikala - {datetime.date(datetime.now())}"
 
 body = f"Istorijske vrijednosti cijena za {datetime.now()}\n"
@@ -219,6 +220,14 @@ html = df_results[['Seller', 'Item', 'Price', 'Old price', 'URL']].to_markdown(t
 
 filename = IMAGE_FILE
 
-# set variables for sending
-os.environ['BODY'] = body
+yag = yagmail.SMTP(os.environ['MAIL_USERNAME'], 
+                     password=os.environ['MAIL_PASSWORD'],
+)
+yag.send(
+    to=receiver,
+    subject=subject,
+    contents=[body, html], 
+    attachments=filename,
+)
 
+print(f"{datetime.now()} Mejl poslat!")
