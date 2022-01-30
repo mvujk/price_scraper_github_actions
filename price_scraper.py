@@ -219,5 +219,6 @@ html = df_results[['Seller', 'Item', 'Price', 'Old price', 'URL']].to_markdown(t
 
 filename = IMAGE_FILE
 
-
+# set variables for sending
+os.environ('BODY') = body
 
