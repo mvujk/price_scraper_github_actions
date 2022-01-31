@@ -1,6 +1,7 @@
 # price_scraper_github_actions
 Scraping specific websites using git hub actions
 
+![Interactive prices history](./data/prices.html)
 
 ![Prices history](./data/prices.jpg)
 
