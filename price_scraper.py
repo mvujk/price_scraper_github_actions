@@ -9,7 +9,7 @@ import pandas as pd
 import numpy as np
 import csv
 from datetime import datetime
-import yagmail
+from redmail import EmailSender
 
 import plotly.express as px
 
@@ -211,22 +211,34 @@ print(f"{datetime.now()} Slika sa izvjestajem zavrsena!")
 # any(df_results['Price'].isna())
 
 ####### EMAIL FIELDS ########
+sender = os.environ['MAIL_USERNAME']
+password = os.environ['MAIL_PASSWORD']
 receiver = os.environ['MAIL_RECEIVER']
 subject=f"Cijena izabranih artikala - {datetime.date(datetime.now())}"
-print(receiver)
 body = f"Istorijske vrijednosti cijena za {datetime.now()}\n"
 body += f"Uspjesno izvuceno {df_results['Price'].notna().sum()}/{df_results.shape[0]} cijena\n\n"
 html = df_results[['Seller', 'Item', 'Price', 'Old price', 'URL']].to_markdown(tablefmt="html")
 
 filename = IMAGE_FILE
 
-yag = yagmail.SMTP(os.environ['MAIL_USERNAME'], 
-                     password=os.environ['MAIL_PASSWORD'],
-)
-yag.send(
-    to=receiver,
+# yag = yagmail.SMTP(os.environ['MAIL_USERNAME'], 
+#                      password=os.environ['MAIL_PASSWORD'],
+# )
+# yag.send(
+#     to=receiver,
+#     subject=subject,
+#     contents=[body, html], 
+#     attachments=filename,
+# )
+
+email = EmailSender(host="smtp.mail.yahoo.com", port=587, use_starttls=True, user_name=sender, password=password)
+
+email.send(
     subject=subject,
-    contents=[body, html], 
+    sender=sender,
+    receivers=[receiver],
+    text=body,
+    html=html,
     attachments=filename,
 )
 

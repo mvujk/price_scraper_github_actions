@@ -4,4 +4,4 @@ beautifulsoup4
 plotly
 kaleido
 tabulate
-yagmail
+redmail
