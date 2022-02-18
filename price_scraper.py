@@ -219,7 +219,7 @@ body = f"Istorijske vrijednosti cijena za {datetime.now()}\n"
 body += f"Uspjesno izvuceno {df_results['Price'].notna().sum()}/{df_results.shape[0]} cijena\n\n"
 html = df_results[['Seller', 'Item', 'Price', 'Old price', 'URL']].to_markdown(tablefmt="html")
 # save results for sending message to messenger
-df_results[['Seller', 'Item', 'Price', 'Old price', 'URL']].to_markdown(buf='.data/results.html' , tablefmt="html", )
+df_results[['Seller', 'Item', 'Price', 'Old price', 'URL']].to_markdown(buf='data/results.html' , tablefmt="html", )
 filename = IMAGE_FILE
 
 # yag = yagmail.SMTP(os.environ['MAIL_USERNAME'], 
