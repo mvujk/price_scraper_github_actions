@@ -88,8 +88,8 @@ def prodavnica_alata_extractor(url):
     # item name
     item_name = product_info.find('h1', attrs={'class':'product__name'}).string
     # item price
-    if product_info.find('div', attrs={'class':'product__prices'}).find('br'):
-        item_price = product_info.find('div', attrs={'class':'product__prices'}).find('br').next_sibling.strip().replace('.','').split()[0]
+    if product_info.find('div', attrs={'class':'product__prices'}).find('span', attrs={'class':'product-sale-price'}):
+        item_price = product_info.find('div', attrs={'class':'product__prices'}).find('span', attrs={'class':'product-sale-price'}).text.strip().replace('.','').split()[0]
     else:
         item_price = product_info.find('div', attrs={'class':'product__prices'}).text.strip().replace('.','').split()[0]
     item_price = float(item_price)
