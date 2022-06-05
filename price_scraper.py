@@ -30,13 +30,13 @@ headers = {
 # add item urls for price scraping
 item_urls = [
     # busilica
-    'https://www.gama-alati.rs/bosch-gbh-2-28-f-sa-izmenljivom-steznom-glavom-elektro-pneumatski-cekic-0611267600.html',
-    'https://www.gama-alati.rs/bosch-gbh-2-28-f-l-boxx-kofer-sa-izmenljivom-steznom-glavom-elektro-pneumatski-cekic-0611267600.html',
+    'https://www.gama-alati.rs/elektro-pneumatski-cekic-bosch-gbh-2-28-f-sds-plus-0611267600.html',
+    'https://www.gama-alati.rs/elektro-pneumatski-cekic-bosch-gbh-2-28-f-sds-plus-l-boxx-izmenljiva-glava-0611267601.html',
     'https://www.prodavnicaalata.rs/proizvodi/elektro-pneumatski-cekic-bosch-gbh-2-28-f-880w/',
     'https://www.prodavnicaalata.rs/proizvodi/elektro-pneumatski-cekic-bosch-gbh-2-28-f-880w-l-boxx/',
     'https://www.okov.rs/sr/alati/elektricni-alat-i-pribor/busilice-odvijaci-i-elektropneumatski-cekici/gbh-2-28-f-el-pneumatski-cekic-sds-880w',
     # detektor
-    'https://www.gama-alati.rs/bosch-d-tect-120-detektor-stuje-metala-drveta-1x1-5-ah-punjac-l-boxx-0601081301.html',
+    'https://www.gama-alati.rs/bosch-d-tect-120-detektor-struje-kablova-pod-naponom-u-l-boxx-koferu-1x2-0ah-0601081301.html',
     'https://www.prodavnicaalata.rs/proizvodi/detektor-struje-bosch-d-tect-120-120mm/',
     'https://www.prodavnicaalata.rs/proizvodi/detektor-struje-bosch-d-tect-120-1x15ah-u-l-boxx-u/',
     'https://www.prodavnicaalata.rs/proizvodi/detektor-struje-bosch-d-tect-120-solo-bez-baterija-i-punjaca-u-l-boxx-u/',
@@ -45,10 +45,6 @@ item_urls = [
     'https://www.gama-alati.rs/bosch-gws-1400-ugaona-brusilica-1400w-125mm-0601824800.html',
     'https://www.prodavnicaalata.rs/proizvodi/ugaona-brusilica-bosch-gws-1400-1400w-125-mm/',
     'https://www.okov.rs/sr/alati/elektricni-alat-i-pribor/brusilice/gws-1400-ugaona-brusilica-125mm-1400w-bosch',
-    # laserski daljinomjer
-    'https://www.prodavnicaalata.rs/proizvodi/laserski-daljinomer-bosch-glm-50-27-c-domet-50m/',
-    'https://www.gama-alati.rs/laserski-daljinomer-bosch-glm-50-27-c-sa-funkcijom-bluetooth-0601072t00.html',
-    'https://www.okov.rs/sr/proizvodi/glm-50-27-c-laserski-daljinomer-bosch',
 ]
 
 
