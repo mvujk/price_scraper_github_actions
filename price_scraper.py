@@ -34,17 +34,17 @@ item_urls = [
     'https://www.gama-alati.rs/elektro-pneumatski-cekic-bosch-gbh-2-28-f-sds-plus-l-boxx-izmenljiva-glava-0611267601.html',
     'https://www.prodavnicaalata.rs/proizvodi/elektro-pneumatski-cekic-bosch-gbh-2-28-f-880w/',
     'https://www.prodavnicaalata.rs/proizvodi/elektro-pneumatski-cekic-bosch-gbh-2-28-f-880w-l-boxx/',
-    'https://www.okov.rs/sr/alati/elektricni-alat-i-pribor/busilice-odvijaci-i-elektropneumatski-cekici/gbh-2-28-f-el-pneumatski-cekic-sds-880w',
+    'https://www.okov.rs/sr/proizvodi/gbh-2-28-f-el-pneumatski-cekic-sds-880w',
     # detektor
     'https://www.gama-alati.rs/bosch-d-tect-120-detektor-struje-kablova-pod-naponom-u-l-boxx-koferu-1x2-0ah-0601081301.html',
     'https://www.prodavnicaalata.rs/proizvodi/detektor-struje-bosch-d-tect-120-120mm/',
     'https://www.prodavnicaalata.rs/proizvodi/detektor-struje-bosch-d-tect-120-1x15ah-u-l-boxx-u/',
     'https://www.prodavnicaalata.rs/proizvodi/detektor-struje-bosch-d-tect-120-solo-bez-baterija-i-punjaca-u-l-boxx-u/',
-    'https://www.okov.rs/sr/alati/laseri/laseri-i-oprema-za-njih/d-tect-120-detektor-12v-li-ion-20ah',
+    'https://www.okov.rs/sr/proizvodi/d-tect-120-detektor-12v-li-ion-20ah',
     # brusilica
     'https://www.gama-alati.rs/bosch-gws-1400-ugaona-brusilica-1400w-125mm-0601824800.html',
     'https://www.prodavnicaalata.rs/proizvodi/ugaona-brusilica-bosch-gws-1400-1400w-125-mm/',
-    'https://www.okov.rs/sr/alati/elektricni-alat-i-pribor/brusilice/gws-1400-ugaona-brusilica-125mm-1400w-bosch',
+    'https://www.okov.rs/sr/proizvodi/gws-1400-ugaona-brusilica-125mm-1400w-bosch',
 ]
 
 
